@@ -1,0 +1,53 @@
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #d9ead3;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #b3e3a1;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #d9ead3;
+}
+
+header {
+  background-color: #212529;
+}
+
+.title-button {
+  background-color: #d9ead3;
+  color: #231010;
+  font-weight: 800;
+  filter: drop-shadow(6px 6px .1px #d9ead39e);
+}
+
+.post-container {
+  border: 4px #231010 solid;
+}
+
+.post-header {
+  background-color: #231010;
+}
+
+.lighter-color {
+  color: #d9ead3;
+}
+
+.light-color {
+  color: #a2a2a3
+}
+
+.dark-bg {
+  background-color: #231010;
+}
