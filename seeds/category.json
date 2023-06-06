@@ -1,0 +1,18 @@
+[
+    {
+        "category_name": "Mice",
+        "img_url": "/img/mice/m1.jpg"
+    },
+    {
+        "category_name": "Keyboard",
+        "img_url": "/img/keyboards/k1.jpg"
+    },
+    {
+        "category_name": "Monitors",
+        "img_url": "/img/monitors/mt1.jpg"
+    },
+    {
+        "category_name": "Gaming Systems",
+        "img_url": "/img/gaming_systems/ps41.jpg"
+    }
+]

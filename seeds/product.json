@@ -1,0 +1,34 @@
+[
+  {
+    "product_name": "Mouse",
+    "price": 5,
+    "stock": 10,
+    "img_url": "/img/mice/m1.jpg",
+    "description": "The most comfortable ergonomic RGB gaming mouse. Its impossibly lightweight ergonomic frame contains a full suite of ultra-premium features.",
+    "category_id": 1
+  },
+  {
+    "product_name": "Keyboard",
+    "price": "20",
+    "stock": "15",
+    "img_url": "/img/keyboards/k1.jpg",
+    "description": "Featuring per-key lighting and a striking underglow that highlights the keyboard from more angles, sync it with your battlestation and enjoy greater immersion for hundreds of integrated games.",
+    "category_id": 2
+  },
+  {
+    "product_name": "Monitor",
+    "price": "50",
+    "stock": "1",
+    "img_url": "/img/monitors/mt1.jpg",
+    "description": "Updated with the capability and clarity you need to game at your best, the new Razer Raptor is now faster than ever with up to 165Hz refresh rate and new THX® Certified visual clarity. The perfect combination of style and performance, the latest Raptor still sports an IPS panel with QHD (2560 x 1440px) resolution and is built upon the previous sleek cable management stand, giving you a streamlined visual experience both on screen and on your desk.",
+    "category_id": 3
+  },
+  {
+    "product_name": "PS4",
+    "price": "400",
+    "stock": "50",
+    "img_url": "/img/gaming_systems/ps41.jpg",
+    "description": "Experience gaming at a whole new level with the PlayStation® 4 Pro. The PS4 Pro has faster frame rates, double the power of PS4, and with 4K TV gaming for stunning clarity and realistic visuals. Play the latest PS4 games with the PS4 controller and stream your favorite videos with compatible 4K services. Enrich your gaming with HDR and experience the lifelike colors and details while you play. Heighten your senses with the PlayStation 4 Pro. The PS4 Pro 1TB is gaming at its best.",
+    "category_id": 4
+  }
+]

@@ -1,6 +1,29 @@
 const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
+const Product = require('./Product');
+const Category = require('./Category');
+const Tag = require('./Tag');
+
+Category.hasMany(Product, {
+  foreignKey: 'id',
+  onDelete: 'CASCADE'
+})
+
+Product.belongsTo(Category, {
+  foreignKey: 'id',
+  onDelete: 'CASCADE'
+})
+
+
+// Product.belongsToMany(Category, { through: Tag });
+// Category.belongsToMany(Product, { through: Tag });
+
+
+
+
+
+
 
 
 //User to Post
@@ -31,4 +54,4 @@ Comment.belongsTo(User, {
 
 
 
-module.exports = { User, Post, Comment };
+module.exports = { User, Post, Comment, Tag, Product, Category };
