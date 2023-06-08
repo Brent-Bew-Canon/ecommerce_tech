@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  background-color: #d9ead3;
+  background-color: #e7e7e7;
 }
 
 header {
@@ -66,10 +66,10 @@ header {
 
 #carDiv img,
 #carDiv {
-  height: 750px;
-  width: 750px
+  height: 400px;
+  width: 600px
 }
 
 #carDiv {
-  width: 750px;
+  width: 600px;
 }
