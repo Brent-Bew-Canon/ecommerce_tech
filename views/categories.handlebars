@@ -1,158 +1,18 @@
-<!-- Image Carousel -->
-<div class="row mb-4 pt-5">
-  <div class="col-5">
-    <h2>Experience The Best That PC Has To Offer</h2>
-    <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit porro necessitatibus recusandae
-      repudiandae neque
-      eligendi iure enim expedita repellendus dolorum, at eos consequuntur praesentium quam quae unde voluptatibus et
-      corrupti?
-      Impedit ullam deserunt cum voluptatibus asperiores magni ipsum quidem officiis neque ex, sed ipsa fugiat
-
-    </p>
-  </div>
-  <div id="carDiv" class=" ms-5 col-7">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/mice/m1-22.jpg" class="d-block vh-2 vw-2" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/keyboards/k1.jpg" class="d-block vh-2 vw-2" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/gaming_systems/ps41.jpg" class="d-block vh-2 vw-2" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/monitors/mt1.jpg" class="d-block vh-2 vw-2" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<!-- Show All Products: -->
+<div class="container"></div>
+<div class="row"></div>
+<div class="col-10  d-flex flex-row align-items-center justify-content-center">
+  {{#each categories as |cat| }}
+  <div class="card me-2" style="width: 21rem; height: 26rem;">
+    <img src="{{cat.img_url}}" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{cat.category_name}}</h5>
+      <p class=""></p>
+      <p class="card-text"></p>
+      <a href="#" class="btn btn-primary">See Product</a>
     </div>
   </div>
+  {{/each}}
 </div>
-
-<!-- Show All Categories: -->
-<div class="container">
-  <div class="row flex-row mb-3">
-    <div class="col-12  d-flex  align-items-center border-bottom border-dark border-2">
-      <h2 class="text-start ">Product Categories</h2>
-    </div>
-  </div>
-  <div class="row flex-row">
-    <div class="col-12  d-flex  align-items-center justify-content-center">
-      {{#each categories as |cat| }}
-      <div class="card me-2" style="width: 21rem; height: 26rem;">
-        <img src="{{cat.img_url}}" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-          <h5 class="card-title">{{cat.category_name}}</h5>
-          <p class=""></p>
-          <p class="card-text"></p>
-          <a href="#" class="btn btn-primary">See Product</a>
-        </div>
-      </div>
-      {{/each}}
-    </div>
-  </div>
 </div>
-
-<!-- Shipping and other info buttons -->
-<div class="container mt-5 pt-5">
-  <div class="row flex-row mb-3 border border-2 rounded-pill border-light bg-dark">
-    <div class="col-12  d-flex  align-items-center justify-content-between p-5">
-      <button class="btn btn-light rounded-pill  ">
-        <div class="p-2">
-          <i class="fa-solid fa-truck-fast fa-3x" style="color: #000000;"></i>
-          <p class="pt-2">Free Shipping On Orders $30+</p>
-        </div>
-      </button>
-      <button class="btn btn-light rounded-pill  ">
-        <div class="p-2">
-          <i class="fa-solid fa-rotate-left fa-3x" style="color: #000000;"></i>
-          <p class="pt-2">30-Day Returns: No Questions Asked</p>
-        </div>
-      </button>
-      <button class="btn btn-light rounded-pill  ">
-        <div class="p-2">
-          <i class="fa-solid fa-award fa-3x" style="color: #000000;"></i>
-          <p class="pt-2">Up to 2-year Warranty on all products</p>
-        </div>
-      </button>
-      <button class="btn btn-light rounded-pill  ">
-        <div class="p-2">
-          <i class="fa-solid fa-headset fa-3x" style="color: #000000;"></i>
-          <p class="pt-2">Free and Easy Technical Support</p>
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Show Best Sellers -->
-<div class="container mt-5 pt-5">
-  <div class="row flex-row mb-3">
-    <div class="col-12  d-flex  align-items-center border-bottom border-dark border-2">
-      <h2 class="text-start ">Best Sellers</h2>
-    </div>
-  </div>
-  <div class="row flex-row">
-    <div class="col-12  d-flex  align-items-center justify-content-center">
-      {{#each categories as |cat| }}
-      <a href="">
-        <div class="card me-2" style="width: 21rem; height: 26rem;">
-          <img src="{{cat.img_url}}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">{{cat.category_name}}</h5>
-            <p class=""></p>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Product</a>
-          </div>
-        </div>
-      </a>
-      {{/each}}
-    </div>
-  </div>
-</div>
-
-<!-- Show New Arrivals -->
-<div class="container mt-5 pt-5">
-  <div class="row flex-row mb-3">
-    <div class="col-12  d-flex  align-items-center border-bottom border-dark border-2">
-      <h2 class="text-start ">New Arrivals</h2>
-    </div>
-  </div>
-  <div class="row flex-row">
-    <div class="col-12  d-flex  align-items-center justify-content-center">
-      {{#each categories as |cat| }}
-      <a href="">
-        <div class="card me-2" style="width: 21rem; height: 26rem;">
-          <img src="{{cat.img_url}}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">{{cat.category_name}}</h5>
-            <p class=""></p>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Product</a>
-          </div>
-        </div>
-      </a>
-      {{/each}}
-    </div>
-  </div>
-</div>
-
-<!-- Headline Img -->
-<div class="container mt-5 pt-5 ">
-  <div class="row flex-row mb-3 ">
-    <div class="col-12  d-flex  align-items-top tech-bg">
-      <img src="/img/assets/tech-bg.jpg" alt="" class="img-fluid h-50 w-100">
-    </div>
-  </div>
 </div>

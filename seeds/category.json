@@ -4,7 +4,7 @@
         "img_url": "/img/mice/m1.jpg"
     },
     {
-        "category_name": "Keyboard",
+        "category_name": "Keyboards",
         "img_url": "/img/keyboards/k1.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "img_url": "/img/monitors/mt1.jpg"
     },
     {
-        "category_name": "Gaming Systems",
+        "category_name": "Gaming",
         "img_url": "/img/gaming_systems/ps41.jpg"
     }
 ]

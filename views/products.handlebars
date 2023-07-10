@@ -1,8 +1,17 @@
 <!-- Show All Products: -->
+
+<h1>hello{{products.product_name}}</h1>
+
+
 <div class="container"></div>
 <div class="row"></div>
 <div class="col-10  d-flex flex-row align-items-center justify-content-center">
+
+
+
+
   {{#each products as |product| }}
+
 
   <div class="card" style="width: 18rem;">
     <img src="{{product.img_url}}" class="card-img-top" alt="...">
@@ -15,6 +24,7 @@
   </div>
 
   {{/each}}
+
 </div>
 </div>
 </div>

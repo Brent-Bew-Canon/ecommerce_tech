@@ -14,7 +14,30 @@ router.get('/', async (req, res) => {
     });
 
     //log the find all products
-    console.log(categoryData)
+    // console.log(categoryData)
+
+    // Serialize data so the template can read it
+    const categories = categoryData.map((cat) => cat.get({ plain: true }));
+
+
+    // Pass serialized data and session flag into template
+    res.render('homepage', {
+      categories,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err)
+  }
+});
+
+router.get('/categories', async (req, res) => {
+  try {
+    // Get all products 
+    const categoryData = await Category.findAll();
+
+    //log the find all products
+    // console.log(productData)
 
     // Serialize data so the template can read it
     const categories = categoryData.map((cat) => cat.get({ plain: true }));
@@ -31,10 +54,13 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/products', async (req, res) => {
+router.get('/mice', async (req, res) => {
   try {
-    // Get all products 
+    // Get mice products 
     const productData = await Product.findAll({
+      where: {
+        category_id: 1
+      },
       include: [
         {
           model: Category
@@ -50,7 +76,103 @@ router.get('/products', async (req, res) => {
 
 
     // Pass serialized data and session flag into template
-    res.render('homepage', {
+    res.render('products', {
+      products,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err)
+  }
+});
+
+router.get('/keyboards', async (req, res) => {
+  try {
+    // Get mice products 
+    const productData = await Product.findAll({
+      where: {
+        category_id: 2
+      },
+      include: [
+        {
+          model: Category
+        },
+      ],
+    });
+
+    //log the find all products
+    // console.log(productData)
+
+    // Serialize data so the template can read it
+    const products = productData.map((prod) => prod.get({ plain: true }));
+
+
+    // Pass serialized data and session flag into template
+    res.render('products', {
+      products,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err)
+  }
+});
+
+router.get('/monitors', async (req, res) => {
+  try {
+    // Get mice products 
+    const productData = await Product.findAll({
+      where: {
+        category_id: 3
+      },
+      include: [
+        {
+          model: Category
+        },
+      ],
+    });
+
+    //log the find all products
+    // console.log(productData)
+
+    // Serialize data so the template can read it
+    const products = productData.map((prod) => prod.get({ plain: true }));
+
+
+    // Pass serialized data and session flag into template
+    res.render('products', {
+      products,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log(err)
+  }
+});
+
+router.get('/gaming', async (req, res) => {
+  try {
+    // Get mice products 
+    const productData = await Product.findAll({
+      where: {
+        category_id: 4
+      },
+      include: [
+        {
+          model: Category
+        },
+      ],
+    });
+
+    //log the find all products
+    // console.log(productData)
+
+    // Serialize data so the template can read it
+    const products = productData.map((prod) => prod.get({ plain: true }));
+
+
+    // Pass serialized data and session flag into template
+    res.render('products', {
       products,
       logged_in: req.session.logged_in
     });
